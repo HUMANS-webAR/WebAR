@@ -12,7 +12,7 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   
   <!-- A-Frame の VR空間に AR.js を紐づける -->
-  <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;patternRatio:0.50;" vr-mode-ui="enabled: false">
+  <a-scene embedded arjs="debugUIEnabled:false;">
  
   <!-- glTF形式のCGモデルの読み込み -->
   <a-assets>
@@ -23,18 +23,18 @@
   </a-assets>
 
      　 <!--マーカー -->
-   <a-marker type='pattern' url='./pattern-nishitachisodawarilab_logohatigob.patt'>
-
+   <a-marker type='pattern' url='./pattern-nishitachisodawarilab_logob.patt'>
+   
      <!--3DCGセッティング-->
      <a-gltf-model 
-       src="#glb"
+       src="#glb" animation-mixer
        
        scale="2 2 2"
        position="0 0.5 0"
        animation="property:rotation; from:0 0 0; to:0 360 0; dur:18000; easing:linear; loop:true;">
      </a-gltf-model>
     </a-marker>
-    <a-entity gltf-model="ARJSTEST_LOGO1" animation-mixer></a-entity>
+    
     <!-- カメラ -->
     <a-entity camera></a-entity>
  
