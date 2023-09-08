@@ -19,17 +19,18 @@
   <a-assets>
     <a-asset-item id="glb" src="ARJSTEST_LOGO1.glb">
 　　　</a-asset-item>   <!-- glbファイル -->
-
-    
   </a-assets>
 
   <a-assets>
     <a-asset-item id="glbb" src="beer.glb">
 　　　</a-asset-item>   <!-- glbファイル -->
-
-    
   </a-assets>
 
+　 <a-assets>
+    <a-asset-item id="jem" src="jem1.glb">
+　　　</a-asset-item>   <!-- glbファイル -->
+  </a-assets>
+    
      　 <!--マーカー -->
    <a-marker type='pattern' url='./pattern-nishitachisodawarilab_logonn.patt'>
    
@@ -55,6 +56,18 @@
       </a-gltf-model>
      </a-marker>
 
+   <a-marker type='pattern' url='./pattern-STAR.patt'>
+   
+      <!--3DCGセッティング-->
+      <a-gltf-model 
+        src="#jem" animation-mixer
+        
+        scale="2 2 2"
+        position="0 0.4 0"
+        animation="property:rotation; from:0 0 0; to:0 0 0; dur:18000; easing:linear; loop:true;">
+      </a-gltf-model>
+     </a-marker>
+ 
     <!-- カメラ -->
     <a-entity camera></a-entity>
  
