@@ -13,8 +13,7 @@
   <!-- gltfアニメーションの読み込み -->
   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
   <!-- A-Frame の VR空間に AR.js を紐づける -->
-  <a-scene embedded arjs="debugUIEnabled:false;">
- 
+  <a-scene embedded arjs="debugUIEnabled:false;" renderer="gammaOutput: true;">
   <!-- glTF形式のCGモデルの読み込み -->
   <a-assets>
     <a-asset-item id="glb" src="ARJSTEST_LOGO1.glb">
@@ -54,5 +53,4 @@
   </a-scene>
  
 </body>
-document.querySelector("a-scene").renderer.gammaOutput=true;
 </html>
