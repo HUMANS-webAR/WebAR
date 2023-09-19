@@ -24,6 +24,11 @@
     <a-asset-item id="visq" src="visqlogo2.glb">
 　　　</a-asset-item>   <!-- glbファイル -->
   </a-assets>
+
+    <a-assets>
+    <a-asset-item id="test" src="testmeishi.glb">
+　　　</a-asset-item>   <!-- glbファイル -->
+  </a-assets>
     
      　 <!--マーカー -->
    <a-marker type='pattern' url='./pattern-nishitachisodawarilab_logonn.patt'>
@@ -46,7 +51,18 @@
         animation="property:rotation; from:0 0 0; to:0 0.04 0; dur:18000; easing:linear; loop:true;">
       </a-gltf-model>
      </a-marker>
- 
+
+     <!--マーカー -->
+   <a-marker type='pattern' url='./zero.patt'>
+      <!--3DCGセッティング-->
+      <a-gltf-model 
+        src="#test" animation-mixer   
+        scale="2 2 2"
+        position="0 0.01 0"
+        animation="property:rotation; from:0 0 0; to:0 0 0; dur:18000; easing:linear; loop:true;">
+      </a-gltf-model>
+     </a-marker>
+    
     <!-- カメラ -->
     <a-entity camera></a-entity>
  
